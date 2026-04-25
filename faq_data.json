@@ -1,0 +1,26 @@
+[ 
+    { 
+        "question": "How do I apply for a loan?",
+        "answer": "You can apply for a loan at your nearest branch, with your National ID, proof of residence, bank statement of not more than 3 months old."
+    }, 
+    { 
+        "question": "What is the interest rate for loans?",
+        "answer": "Interest rates vary depending on the loan type and your credit profile. Please contact the bank for exact rates."
+    }, 
+    { 
+        "question": "How do I open an account?",
+        "answer": "You need a valid ID, proof of residence, and an initial deposit to open an account."
+    }, 
+    {
+        "question": "What should I do if I lose my card?",
+        "answer": "Immediately block your card using mobile banking or contact customer support."
+    }, 
+    { 
+        "question": "Will my FNB Eswatini debit card still work cross-border?", 
+        "answer": "Yes, FNB cards are work globally, and this change will not affect that"
+    }, 
+    { 
+        "question": "What happens when I send money to a personal or business account on weekends or after hours?", 
+        "answer": "You will be able to initiate the payment, however, processing will happen on the next business day. This affects when the payment will be remitted to the receiving bank"
+    }
+]

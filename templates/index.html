@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banking Chatbot</title>
+</head>
+<body>
+    <h2>FNB Eswatini Chatbot</h2>
+
+    <div id="chatbox"></div>
+
+    <input type="text" id="userInput" placeholder="Ask a question...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        function sendMessage() {
+            let input = document.getElementById("userInput").value;
+
+            fetch("/chat", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({message: input})
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("chatbox").innerHTML += 
+                    "<p><b>You:</b> " + input + "</p>";
+                document.getElementById("chatbox").innerHTML += 
+                    "<p><b>Bot:</b> " + data.response + "</p>";
+            });
+        }
+    </script>
+</body>
+</html> 
